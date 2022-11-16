@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+
+  webserver:
+    build: ./webserver
+    container_name: ai
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 8083:80
